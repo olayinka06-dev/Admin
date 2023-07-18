@@ -51,36 +51,36 @@ const Payout = () => {
     <div className="">
       <div className="py-12 px-5 mb-4 rounded-2xl">
         <div className="text-black text-2xl mb-4 font-semibold capitalize">
-          user summary
+        my payout
         </div>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-4">
           <div className="flex items-center justify-center h-24 rounded-2xl bg-white shadow-sm border border-gray-800">
             <div className="w-full h-full flex flex-col justify-start items-center gap-2.5 py-5 ">
               <div className="text-black text-opacity-50 text-sm font-normal capitalize">
-                Total balance
+              total balance
               </div>
               <div className="text-black text-2xl font-semibold capitalize">
-                n 200,000
+              N 5,400,000
               </div>
             </div>
           </div>
           <div className="flex items-center justify-center h-24 rounded-2xl bg-white shadow-sm border border-gray-800">
             <div className="w-full h-full flex flex-col justify-start items-center gap-2.5  py-5">
               <div className="text-black text-opacity-50 text-sm font-normal capitalize">
-                active users
+              pending payout
               </div>
               <div className="text-black text-2xl font-semibold capitalize">
-                20.2k
+              N 1,980,000
               </div>
             </div>
           </div>
           <div className="flex items-center justify-center h-24 rounded-2xl bg-white shadow-sm border border-gray-800">
             <div className="w-full h-full flex flex-col justify-start items-center gap-2.5  py-5">
               <div className="text-black text-opacity-50 text-sm font-normal capitalize">
-                daily transaction
+              total payout
               </div>
               <div className="text-black text-2xl font-semibold capitalize">
-                10.9k
+              N 80,090,000
               </div>
             </div>
           </div>
@@ -91,13 +91,13 @@ const Payout = () => {
           <div className="w-full">
             <p className="lg:text-[20px] text-[15px] font-[600] mb-[20px]">Transaction History</p>
           </div>
-          <div className="w-2/3 md:w-auto h-12 px-4 py-3 bg-white rounded-2xl border border-black border-opacity-10 flex flex-col justify-start items-start gap-2.5">
-            <div className="flex items-center gap-2.5">
+          <div className="w-[70%] md:w-auto h-12 px-4 py-3 bg-white rounded-2xl border border-black border-opacity-10 flex flex-col justify-start items-start gap-2.5">
+            <div className="flex items-center gap-1">
               <span className="w-6 h-6">
                 <BiPlus />
               </span>
               <div className="text-black text-sm font-normal capitalize">
-                monthly
+              request payout
               </div>
             </div>
           </div>
