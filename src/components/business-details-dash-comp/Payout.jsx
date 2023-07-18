@@ -7,9 +7,10 @@ const Payout = () => {
   const data = payoutDataSet;
 
   let columns = [
-    { title: "User Name" },
-    { title: "Email Address" },
-    { title: "Phone no." },
+    { title: "Business name" },
+    { title: "Account no." },
+    { title: "Bank name" },
+    { title: "Description" },
     { title: "Amount" },
 
     {
@@ -91,12 +92,12 @@ const Payout = () => {
           <div className="w-full">
             <p className="lg:text-[20px] text-[15px] font-[600] mb-[20px]">Transaction History</p>
           </div>
-          <div className="w-[70%] md:w-auto h-12 px-4 py-3 bg-white rounded-2xl border border-black border-opacity-10 flex flex-col justify-start items-start gap-2.5">
+          <div className="w-[10%] md:w-auto h-12 px-4 py-3 bg-white rounded-2xl border border-black border-opacity-10 flex flex-col justify-start items-start gap-2.5">
             <div className="flex items-center gap-1">
               <span className="w-6 h-6">
                 <BiPlus />
               </span>
-              <div className="text-black text-sm font-normal capitalize">
+              <div className="text-black text-[11px] font-normal capitalize">
               request payout
               </div>
             </div>

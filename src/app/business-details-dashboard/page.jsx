@@ -63,7 +63,7 @@ const page = () => {
                         <div className="grid lg:grid-cols-7 mt-5 md:grid-cols-5 gap-x-2 grid-cols-3">
                             {
                                 tabOptionData.map((tod, i)=>(
-                                    <button className={`text-[13px] capitalize rounded-2xl px-1 py-2 ${currentTab === i ? "border border-[#0CF] bg-[#0CF] text-white" : "border border-[rgba(0,0,0,0.5)]"} text-[rgba(0,0,0,0.5)]`} key={i} onClick={()=> handleClickOption(i)}>{tod}</button>
+                                    <button className={`text-[13px] hover:bg-[#0CF] transition duration-150 ease-out hover:text-white hover:border-[#0CF] capitalize rounded-2xl px-1 py-2 ${currentTab === i ? "border border-[#0CF] bg-[#0CF] text-white" : "border border-[rgba(0,0,0,0.5)]"} text-[rgba(0,0,0,0.5)]`} key={i} onClick={()=> handleClickOption(i)}>{tod}</button>
                                 ))
                             }
                         </div>
