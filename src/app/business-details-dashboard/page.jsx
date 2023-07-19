@@ -10,6 +10,7 @@ import AdminSideBar2 from '@/components/sidebar/AdminSideBar2';
 import Users from '@/components/business-details-dash-comp/Users';
 import Dispute from '@/components/business-details-dash-comp/Dispute';
 import HelpDesk from '@/components/business-details-dash-comp/HelpDesk'
+import Message from '@/components/business-details-dash-comp/Message';
 
 const page = () => {
 
@@ -58,11 +59,7 @@ const page = () => {
             content: (<HelpDesk/>)
         },
         {
-            content: (
-                <div className="">
-                    Hi Programming is fun
-                </div>
-            )
+            content: (<Message/>)
         },
     ]
 
