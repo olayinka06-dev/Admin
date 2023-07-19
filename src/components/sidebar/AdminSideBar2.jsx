@@ -6,7 +6,7 @@ import {TiWarningOutline} from 'react-icons/ti'
 import { TbHelpHexagon } from "react-icons/tb";
 
 
-const AdminSideBar2 = () => {
+const AdminSideBar2 = ({handleSwitchTab, currentTabSwitch, switchTab}) => {
     const [isSidebarOpen, setSidebarOpen] = useState(false);
 
     const toggleSidebar = () => {
@@ -17,17 +17,14 @@ const AdminSideBar2 = () => {
         {
             title: "dispute",
             icons: (<TiWarningOutline/>),
-            link: ""
         },
         {
             title: "helpdesk",
             icons: (<TbHelpHexagon/>),
-            link: ""
         },
         {
             title: "message",
             icons: (<BiUser/>),
-            link: ""
         },
     ]
 
@@ -86,10 +83,10 @@ const AdminSideBar2 = () => {
                         >
                             {
                                 menuData.map((md, i)=>(
-                                    <Link href={md.link} className="flex flex-row items-center gap-4">
-                                        <span className="text-[rgba(0,0,0,0.5)] text-[20px] font-[400]">{md.icons}</span>
-                                        <span className="text-[rgba(0,0,0,0.5)] text-[16px] font-[400]">{md.title}</span>
-                                    </Link>
+                                    <span onClick={()=> handleSwitchTab(i)} key={i} className={`flex flex-row cursor-pointer text-[rgba(0,0,0,0.5)] items-center gap-4`}>
+                                        <span className={`${switchTab && (currentTabSwitch === i ? "text-[#0CF!important]" : "text-[rgba(0,0,0,0.5)]")} text-[20px] font-[400]`}>{md.icons}</span>
+                                        <span className={`${switchTab && (currentTabSwitch === i ? "text-[#0CF!important]" : "text-[rgba(0,0,0,0.5)]")}  text-[16px] font-[400]`}>{md.title}</span>
+                                    </span>
                                 ))
                             }
                         </ul>
