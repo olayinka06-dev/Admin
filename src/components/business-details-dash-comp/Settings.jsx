@@ -53,7 +53,7 @@ const Settings = () => {
           <div className="w-full grid lg:grid-cols-6 md:grid-cols-5 gap-x-2 mt-10 grid-cols-3">
             {
               tabOptionData.map((tod, i) => (
-                <button className={`text-[11px] rounded-2xl px-0 py-3 ${currentTab === i ? "border border-[#0CF] bg-[#0CF] text-white" : "border border-[rgba(0,0,0,0.5)]"} text-[rgba(0,0,0,0.5)]`} key={i} onClick={() => handleClickOption(i)}>{tod}</button>
+                <button className={`text-[11px] hover:bg-[#0CF] transition duration-150 ease-out hover:text-white hover:border-[#0CF] capitalize rounded-2xl px-0 py-3 ${currentTab === i ? "border border-[#0CF] bg-[#0CF] text-white" : "border border-[rgba(0,0,0,0.5)]"} text-[rgba(0,0,0,0.5)]`} key={i} onClick={() => handleClickOption(i)}>{tod}</button>
               ))
             }
           </div>

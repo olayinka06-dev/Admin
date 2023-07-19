@@ -9,10 +9,10 @@ const Users = () => {
     { title: "User Name" },
     { title: "Email Address" },
     { title: "Phone no." },
-    { title: "Amount" },
+    
 
     {
-      title: "",
+      title: "Amount",
       render: (data, type, row) => {
         return `
              
@@ -43,7 +43,7 @@ const Users = () => {
 
       </div>
     </div>
-  )
+  );
 }
 
 export default Users

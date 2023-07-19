@@ -1,7 +1,6 @@
 "use client";
 import React from 'react';
 import { BiChevronDown, BiChevronRight } from "react-icons/bi";
-import ChartComponent from '../HomeComponents/PieChart';
 import { dashboarddataset } from './Dashboarddataset';
 import DataTable from '../Table/DataTable';
 import Link from "next/link";
@@ -272,4 +271,4 @@ const Dashboard = () => {
     );
 }
 
-export default Dashboard
+export default Dashboard;

@@ -88,19 +88,15 @@ const Payout = () => {
         </div>
       </div>
       <div className="container-fluid bg-[#FFFFFF] py-[48px] rounded-[20px]">
-        <div className="w-full flex justify-between">
-          <div className="w-full">
+      <div className="w-full flex justify-between">
+          <div className="">
             <p className="lg:text-[20px] text-[15px] font-[600] mb-[20px]">Transaction History</p>
           </div>
-          <div className="w-[10%] md:w-auto h-12 px-4 py-3 bg-white rounded-2xl border border-black border-opacity-10 flex flex-col justify-start items-start gap-2.5">
-            <div className="flex items-center gap-1">
-              <span className="w-6 h-6">
-                <BiPlus />
-              </span>
-              <div className="text-black text-[11px] font-normal capitalize">
-              request payout
-              </div>
-            </div>
+          <div className="">
+            <button className='flex px-3 py-2.5 text-sm cursor-pointer items-center flex-row gap-2 border border-[rgba(0,0,0,.5)] border-solid rounded-2xl'>
+              <span><BiPlus /></span>
+              Request Payout
+            </button>
           </div>
         </div>
 
