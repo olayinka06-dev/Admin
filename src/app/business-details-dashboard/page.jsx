@@ -9,6 +9,7 @@ import Transaction from '@/components/business-details-dash-comp/Transaction';
 import AdminSideBar2 from '@/components/sidebar/AdminSideBar2';
 import Users from '@/components/business-details-dash-comp/Users';
 import Dispute from '@/components/business-details-dash-comp/Dispute';
+import HelpDesk from '@/components/business-details-dash-comp/HelpDesk'
 
 const page = () => {
 
@@ -54,11 +55,7 @@ const page = () => {
             content: (<Dispute />)
         },
         {
-            content: (
-                <div>
-                    Hello world
-                </div>
-            )
+            content: (<HelpDesk/>)
         },
         {
             content: (
