@@ -30,6 +30,7 @@ const Dispute = () => {
             },
         },
     ];
+    
     return (
         <div className="">
             <div className="container-fluid bg-[#FFFFFF] py-[48px] rounded-[20px]">
