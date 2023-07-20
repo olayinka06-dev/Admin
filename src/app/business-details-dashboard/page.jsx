@@ -78,11 +78,11 @@ const page = () => {
             <div className="lg:flex relative">
                 <AdminSideBar2 switchTab={switchTab} currentTabSwitch={currentTabSwitch} handleSwitchTab={handleSwitchTab} />
                 <div className="flex-1 mx-2 lg:ms-5">
-                    <div className="animation py-12 px-9 h-auto flex flex-col gap-4 mb-4 rounded-2xl bg-white shadow capitalize">
+                    <div className="animation py-12 px-3 md:px-9 h-auto flex flex-col gap-4 mb-4 rounded-2xl bg-white shadow capitalize">
                         <div className="flex flex-col gap-4">
                             <h3 className="text-[20px] font-[600]">business details</h3>
                         </div>
-                        <div className="grid lg:grid-cols-7 mt-5 md:grid-cols-5 gap-x-2 grid-cols-3">
+                        <div className="grid lg:grid-cols-7 mt-5 lg:gap-y-0 gap-y-3 md:grid-cols-5 gap-x-2 sm:grid-cols-3 grid-cols-2">
                             {
                                 tabOptionData.map((tod, i) => (
                                     <button className={`text-[13px] hover:bg-[#0CF] transition duration-150 ease-out hover:text-white hover:border-[#0CF] capitalize rounded-2xl px-1 py-2 ${!switchTab && (currentTab === i ? "border border-[#0CF!important] bg-[#0CF] text-white" : "border border-[rgba(0,0,0,0.5)]")} border border-[rgba(0,0,0,0.5)] text-[rgba(0,0,0,0.5)]`} key={i} onClick={() => handleClickOption(i)}>{tod}</button>

@@ -15,7 +15,7 @@ function Sidebar({ MenuData, handleTabClick, activeTab }) {
     <>
       <aside
         id="cta-button-sidebar"
-        className={`hidden lg:block 
+        className={`block 
             duration-300 h-[64] rounded-2xl relative  `}
         aria-label="Sidebar"
       >
@@ -42,28 +42,27 @@ function Sidebar({ MenuData, handleTabClick, activeTab }) {
             </ul>
           </div>
         </div>
-        <div className={`w-72  h-[auto] bg-white rounded-2xl`}>
-          <div className="px-10 py-14 ">
+        <div className={`lg:w-72 w-full  h-[auto] bg-white rounded-2xl`}>
+          <div className="lg:px-10 flex flex-col justify-center lg:items-start items-center lg:justify-start px-4 py-14 ">
             <ul
-              className="bullet-line-list relative pl-8 space-y-4 capitalize"
-              style={{ borderLeft: "2px dotted black" }}
+              className="bullet-line-list flex lg:flex-col lg:gap-0 gap-4 flex-row border-t-[2px] lg:border-t-[0px] lg:border-s-[2px] border-dotted border-[black] relative lg:pl-8 lg:space-y-4 capitalize"
             >
               {MenuData.map((menu, index) => (
-                <li className="relative flex items-start" key={index}>
+                <li className="relative mt-4 lg:mt-0 flex items-start" key={index}>
                   <div
-                    className={`w-4 absolute h-4 border-2 left-[-40px] ${
+                    className={`w-4 absolute h-4 border-2 bottom-[200px] lg:top-0 lg:left-[-40px] ${
                       activeTab === index
                         ? "border-[#0CF] bg-[#0CF]"
                         : " border-[rgba(0,0,0,0.30)]"
                     } rounded-full bg-white
                     ${
-                      index === 1 || index === 2 || index ==3 ||index === 4 ? 'top-[4px]' : 'top-0'
+                      index === 1 || index === 2 || index ==3 ||index === 4 ? 'lg:top-[4px] top-[-24px]' : 'lg:top-0 top-[-24px]'
                     }
                     `}
                   ></div>
                   <span
                     onClick={() => handleTabClick(index)}
-                    className={`ml-1 cursor-pointer ${
+                    className={`ml-0 lg:ml-1 text-[11px] lg:text-[15.56px] cursor-pointer ${
                       activeTab === index
                         ? "text-[#0CF]"
                         : "text-[rgba(0,0,0,0.50)]"

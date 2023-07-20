@@ -62,8 +62,8 @@ const Dashboard = () => {
                         user summary
                     </div>
                     <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-4">
-                        <div className="flex items-center justify-center h-24 rounded-2xl bg-white shadow-sm border border-gray-800">
-                            <div className="w-full h-full flex flex-col justify-start items-center gap-2.5 py-5 ">
+                        <div className="flex items-center justify-center  rounded-2xl bg-white shadow-sm border border-[rgba(0,0,0,.1)]">
+                            <div className="w-full h-full flex flex-col justify-start items-center gap-2.5 py-[30px] ">
                                 <div className="text-black text-opacity-50 text-sm font-normal capitalize">
                                     Total balance
                                 </div>
@@ -72,8 +72,8 @@ const Dashboard = () => {
                                 </div>
                             </div>
                         </div>
-                        <div className="flex items-center justify-center h-24 rounded-2xl bg-white shadow-sm border border-gray-800">
-                            <div className="w-full h-full flex flex-col justify-start items-center gap-2.5  py-5">
+                        <div className="flex items-center justify-center  rounded-2xl bg-white shadow-sm border border-[rgba(0,0,0,.1)]">
+                            <div className="w-full h-full flex flex-col justify-start items-center gap-2.5  py-[30px]">
                                 <div className="text-black text-opacity-50 text-sm font-normal capitalize">
                                     active users
                                 </div>
@@ -82,8 +82,8 @@ const Dashboard = () => {
                                 </div>
                             </div>
                         </div>
-                        <div className="flex items-center justify-center h-24 rounded-2xl bg-white shadow-sm border border-gray-800">
-                            <div className="w-full h-full flex flex-col justify-start items-center gap-2.5  py-5">
+                        <div className="flex items-center justify-center  rounded-2xl bg-white shadow-sm border border-[rgba(0,0,0,.1)]">
+                            <div className="w-full h-full flex flex-col justify-start items-center gap-2.5  py-[30px]">
                                 <div className="text-black text-opacity-50 text-sm font-normal capitalize">
                                     daily transaction
                                 </div>
@@ -95,7 +95,7 @@ const Dashboard = () => {
                     </div>
                 </div>
 
-                <div className="py-12 px-5 h-auto mb-4 rounded-2xl">
+                <div className="lg:py-12 py-5 px-5 h-auto mb-4 rounded-2xl">
                     <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
                         <h2 className="text-black text-2xl font-semibold capitalize">
                             Current Statistics
@@ -117,7 +117,7 @@ const Dashboard = () => {
                         </div>
                         <div className="row-span-1 md:col-span-2  shadow-cyan-100">
                             <div className="flex  align-items">
-                                <div className=" h-[105px] flex-col justify-start items-start gap-[15px] inline-flex">
+                                <div className=" py-7 flex-col justify-start items-start gap-[15px] inline-flex">
                                     <div className="justify-start items-center gap-[13px] inline-flex">
                                         <div className="w-[25px] h-[25px] bg-amber-500 rounded-full" />
                                         <div className="text-black text-[18px] font-normal capitalize">
